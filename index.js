@@ -8,13 +8,13 @@ import{a as l,S as p,i as n}from"./assets/vendor-xpOxgMII.js";(function(){const 
           alt="${e}"
         />
         <div class="photo-information">
-        <p class="information-item">Likes ${t}</p>
-                <p class="information-item">Views ${a}</p>
-        <p class="information-item">Comments ${d}</p>
-        <p class="information-item">Downloads ${f}</p>
+        <p class="information-item"><b>Likes</b> ${t}</p>
+                <p class="information-item"><b>Views</b> ${a}</p>
+        <p class="information-item"><b>Comments</b> ${d}</p>
+        <p class="information-item"><b>Downloads</b> ${f}</p>
 </div>
 </div>
       </a>
       </li>
-  `).join("");u.insertAdjacentHTML("beforeend",r),g.refresh()}function L(){u.innerHTML=""}function b(){m.classList.remove("is-hidden")}function v(){m.classList.add("is-hidden")}const c=document.querySelector(".form"),q=document.querySelector('input[name="search-text"]');c.addEventListener("submit",o=>{o.preventDefault();const r=q.value.trim();if(r===""){n.warning({message:"Please enter the text"});return}L(),b(),y(r).then(i=>{if(i.hits.length===0){n.warning({message:"Sorry, there are no images matching your search query. Please try again!"});return}h(i.hits)}).catch(()=>{n.error({message:"Please try again later."})}).finally(()=>{v(),c.reset()})});
+  `).join("");u.insertAdjacentHTML("beforeend",r),g.refresh()}function b(){u.innerHTML=""}function L(){m.classList.remove("is-hidden")}function v(){m.classList.add("is-hidden")}const c=document.querySelector(".form"),q=document.querySelector('input[name="search-text"]');c.addEventListener("submit",o=>{o.preventDefault();const r=q.value.trim();if(r===""){n.warning({message:"Please enter the text"});return}b(),L(),y(r).then(i=>{if(i.hits.length===0){n.warning({message:"Sorry, there are no images matching your search query. Please try again!"});return}h(i.hits)}).catch(()=>{n.error({message:"Please try again later."})}).finally(()=>{v(),c.reset()})});
 //# sourceMappingURL=index.js.map
