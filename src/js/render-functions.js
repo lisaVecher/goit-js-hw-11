@@ -32,10 +32,10 @@ export function createGallery(images) {
           alt="${tags}"
         />
         <div class="photo-information">
-        <p class="information-item">Likes ${likes}</p>
-                <p class="information-item">Views ${views}</p>
-        <p class="information-item">Comments ${comments}</p>
-        <p class="information-item">Downloads ${downloads}</p>
+        <p class="information-item"><b>Likes</b> ${likes}</p>
+                <p class="information-item"><b>Views</b> ${views}</p>
+        <p class="information-item"><b>Comments</b> ${comments}</p>
+        <p class="information-item"><b>Downloads</b> ${downloads}</p>
 </div>
 </div>
       </a>
